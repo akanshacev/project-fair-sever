@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+
+->FrameWork
+
+
+->CORS : Cross Origin Resource Sharing
+    npm i cors
+
+->DOTENV : a package for loading .env contents into process object in node.js
+    npm i dotenv
+
+->Software Architecture:
+1. MVC - Model View Controller
+2. MVT - Model View Template
+
+=>JSON Web Token(JWT):
+-mechanism used for authentication
+-need jsonwebtoken package
+-generates a token value if the given credentials for authentication is valid ,and pass it to user side
+-every request from user side after authentication will need token value with it,bcs only after verifying tha token,
+ will follow to request resolving
+ -uses sign() method for token generation
+ -uses verify() method for token verification
+
+
+ =>Middleware:
+
+ -special function that can process requests in between client and server,and, block the request if they needed to
+
+ const middleware=(req,res,next)=>{
+    req 
+    next() -it is used to send data to server
+ }
